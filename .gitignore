@@ -1,0 +1,4 @@
+data/*
+!data/.gitkeep
+downloaded_data/*
+!downloaded_data/.gitkeep

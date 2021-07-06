@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Classification Fullstack</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-dark text-light">
+        MNIST Digit Classification
+    </nav>
+    <br>
+    <div class="text-center">
+        <img class="img-fluid" src="https://prod-uploads-pub.useast1.kadenze.com/prod/usr/uploads/course/112/coursework/1247/coursework_field/7469/coursework_field_entries/157093/gallery_Webp.net-gifmaker.gif?Expires=1624501406&Signature=B2X8qCw5JHnvpTBYLy9ykDOoIwKaO65Ji3y6LqIBkQwa5yXQ9wT5IX~GmJYTPHkDK5jgoRkBbkxMc0iIZTTgaxcLZTmk7TSbkp3NSNpWIdXxY2gpJhRkBmYKdl2do50X4YjP7YgUDcr~ej-Jdma77eguWrEC1tOtTKxiPa7zfXO8loulUYGuyVbMv8k13i6NwYfhgW6KLejMVqd~8IYGNz3lhHmy5Ytwh~az1UPAJ8yI~GmacJEaLe9ZY-gJYFjVF244Zy8P5k7eif6B~mT2eTz5kAPe-E5NQO8asnHVaWVXJFR-~wur10gAJcGdKm3PcBCPrF1NKdss9LiGDMQgtw__&Key-Pair-Id=APKAI3WTOBWXO6VZASUA"><br>
+        <span><a href="https://prod-uploads-pub.useast1.kadenze.com/prod/usr/uploads/course/112/coursework/1247/coursework_field/7469/coursework_field_entries/157093/gallery_Webp.net-gifmaker.gif?Expires=1624501406&Signature=B2X8qCw5JHnvpTBYLy9ykDOoIwKaO65Ji3y6LqIBkQwa5yXQ9wT5IX~GmJYTPHkDK5jgoRkBbkxMc0iIZTTgaxcLZTmk7TSbkp3NSNpWIdXxY2gpJhRkBmYKdl2do50X4YjP7YgUDcr~ej-Jdma77eguWrEC1tOtTKxiPa7zfXO8loulUYGuyVbMv8k13i6NwYfhgW6KLejMVqd~8IYGNz3lhHmy5Ytwh~az1UPAJ8yI~GmacJEaLe9ZY-gJYFjVF244Zy8P5k7eif6B~mT2eTz5kAPe-E5NQO8asnHVaWVXJFR-~wur10gAJcGdKm3PcBCPrF1NKdss9LiGDMQgtw__&Key-Pair-Id=APKAI3WTOBWXO6VZASUA">Image Source</a></span>
+    </div>
+    
+    <br>
+    <div class="container">
+        {% if output %}
+            <div class="alert alert-success">The predicted number is <i>{{output}}</i></div>
+        {% endif %}
+        <form action="/" method="POST" class="form-control">
+            <label for="input_link" class="form-group">Enter your link</label><br>
+            <input type="text" name="input_link" class="form-group"><br>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
